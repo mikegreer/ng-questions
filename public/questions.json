@@ -1,0 +1,120 @@
+{
+    "questions" : [
+        {
+            "id": 0,
+            "type": "multifield",
+            "headline": "Let's do this together",
+            "subhead": "Tell us about you.",
+            "fields": [
+                {
+                    "label": "First Name",
+                    "type": "text"
+                },
+                {
+                    "label": "Last Name",
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "type": "picker",
+            "headline": "It's good to meet you.",
+            "subhead": "Do you own or rent?",
+            "options": [
+                {
+                    "label": "Own",
+                    "image": "key1.svg"
+                },
+                {
+                    "label": "Rent",
+                    "image": "key2.svg"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "type": "address",
+            "headline": "What's your address?",
+            "label": "Start typing your address"
+        },
+        {
+            "id": 3,
+            "type": "picker",
+            "headline": "What type of home is it?",
+            "options": [
+                {
+                    "label": "House",
+                    "sublabel": "Commonly a single family home, duplex, triplex, townhouse",
+                    "image": "house.svg"
+                },
+                {
+                    "label": "Condo",
+                    "sublabel": "Often a multi-family building or complex",
+                    "image": "condo.svg"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "type": "picker",
+            "headline": "Got it. Thanks.",
+            "subhead": "How would you describe your home’s fixtures and finish? This helps us understand the rebuild cost if the worst was to happen.",
+            "options": [
+                {
+                    "label": "No frills",
+                    "image": "3starhouse.svg"
+                },
+                {
+                    "label": "Some luxuries",
+                    "image": "4starhouse.svg"
+                },
+                {
+                    "label": "Best of everything",
+                    "image": "5starhouse.svg"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "type": "picker",
+            "headline": "Thanks for that.",
+            "subhead": "What do you use your home for?",
+            "options": [
+                {
+                    "label": "Moving to it",
+                    "sublabel": "(or been in fewer than 12 months)",
+                    "image": "moving.svg",
+                    "value": "moving"
+                },
+                {
+                    "label": "Live in it",
+                    "image": "sofa.svg",
+                    "value": "live in"
+                },
+                {
+                    "label": "Rent it out",
+                    "image": "key.svg",
+                    "value": "renting out"
+                }
+            ],
+            "secondaryQuestions": [
+                {
+                    "conditions": "renting out",
+                    "headline": "Will you rend your home for more than two weeks a year?",
+                    "type": "picker",
+                    "options": [
+                        {
+                            "label": "yes",
+                            "image": "tick.svg"
+                        },
+                        {
+                            "label": "no",
+                            "image": "cross.svg"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
