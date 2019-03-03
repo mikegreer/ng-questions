@@ -1,0 +1,42 @@
+.multifield {
+    margin: 40px 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-field-wrapper {
+    margin: 13px 0 0 0;
+    width: 500px;
+}
+
+.label-text-input{
+    display: block;
+    position: relative;
+}
+.label-text-input label {
+    font-size: 14px;
+    position: absolute;
+    top: 15px;
+    left: 14px;
+    transition: all 0.3s;
+    pointer-events: none;
+}
+
+.label-text-input input{
+    font-size: 20px;
+}
+.label-text-input label.fill-input {
+    font-size: 20px;
+    top: 35px;
+}
+
+label{
+    color: #000;
+  }
+  input{
+    margin: 10px 0;
+    padding: 25px 15px 20px;
+    border: none;
+    border-radius: 6px;
+  }

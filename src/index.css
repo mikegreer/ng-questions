@@ -12,14 +12,31 @@ code {
     monospace;
 }
 
-.question-container{
-  color: #ffffff;
-}
-.question-container h2{
-  font-size: 
+.question-outer{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 100vh;
 }
 
-button {
+.question-container{
+  color: #ffffff;
+  text-align: center;
+  height: 300px;
+}
+.question-container h2{
+  font-size: 36px;
+  margin: 16px 0;
+  font-weight: bold;
+  line-height: 40px;
+}
+.question-container h3{
+  font-weight: normal;
+  font-size: 20px;
+  margin: 16px 0;
+}
+.form-button {
+  display: block;
   cursor: pointer;
   padding: 16px 40px;
   background-color: #FFA732;
@@ -33,7 +50,7 @@ button {
   font-weight: bold;
 }
 
-button:hover{
+.form-button:hover{
   background-color: rgb(255, 152, 16);
   box-shadow: 0 6px 0px rgba(0, 0, 0, .3);
 }

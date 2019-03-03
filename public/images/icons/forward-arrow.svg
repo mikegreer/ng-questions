@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="18px" viewBox="0 0 11 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Back Icon Copy</title>
+    <desc>Created with Sketch.</desc>
+    <g id="-Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Header-BG" transform="translate(-1265.000000, -54.000000)" fill="#FFFFFF">
+            <g id="Back-Icon-Copy" transform="translate(1270.500000, 63.000000) scale(-1, 1) translate(-1270.500000, -63.000000) translate(1264.000000, 53.000000)">
+                <path d="M1.5,5 L11.5,5 C12.3284271,5 13,5.67157288 13,6.5 L13,8 L1.5,8 C0.671572875,8 1.01453063e-16,7.32842712 0,6.5 L0,6.5 C-1.01453063e-16,5.67157288 0.671572875,5 1.5,5 Z" id="Rectangle-Copy" transform="translate(6.500000, 6.500000) scale(-1, 1) rotate(45.000000) translate(-6.500000, -6.500000) "></path>
+                <rect id="Rectangle-Copy-2" opacity="0.8" transform="translate(6.500000, 13.500000) rotate(45.000000) translate(-6.500000, -13.500000) " x="0" y="12" width="13" height="3" rx="1.5"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

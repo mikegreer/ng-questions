@@ -2,56 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import TextField from '@material-ui/core/TextField';
-
-class MultiField extends React.Component {
-    render() {
-        let fields = [];
-        this.props.data.fields.forEach((field, id) => {
-            fields.push(
-                <TextField
-                    type="text"
-                    key={id}
-                    label={field.label}
-                ></TextField>
-            );
-        });
-        return(
-            <span>
-                {fields}
-            </span>
-        );
-    }
-}
-
-class PickerOption extends React.Component {
-    render() {
-        return (
-            <span onClick={() => this.props.nextQuestion()}>
-                <img src={this.props.optionData.image} alt=""></img>
-                <p>{this.props.optionData.label}</p>
-                <p>{this.props.optionData.sublabel}</p>
-            </span>
-        );
-    }
-}
-class Picker extends React.Component {
-    render() {
-        const options = [];
-        this.props.data.options.forEach((option, id) => {
-            options.push(
-                <PickerOption
-                    optionData = {option}
-                    key = {id}
-                    nextQuestion = {() => {this.props.nextQuestion()}}
-                />
-            )
-        })
-        return (
-            <span>{options}</span>
-        );
-    }
-}
+import MultiField from './components/MultiField.js'
+import Picker from './components/Picker.js'
+import Backarrow from './components/Backarrow';
 
 class Question extends React.Component {
     render() {
@@ -59,16 +12,21 @@ class Question extends React.Component {
         let subhead = "";
         let question = "";
         let type = "";
-        const buttonLabel = this.props.currentQuestionId === 0 ? "Get started" : "continue";
+        // const currentAnswer = this.props.currentAnswer;
+        // const buttonLabel = this.props.currentQuestionId === 0 ? "Go" : "continue";
         
         if(this.props.data){
             headline = this.props.data.headline;
             subhead = this.props.data.subhead;
             type = this.props.data.type;
             if(type === "multifield"){
-                question = <MultiField data={this.props.data}/>
+                question = <MultiField 
+                    data = {this.props.data} 
+                    handleAnswer = {this.props.handleAnswer} 
+                    fieldStates = {this.props.answers[this.props.data.id]}
+                />
             }else if(type === "picker"){
-                question = <Picker data={this.props.data} nextQuestion={this.props.nextQuestion} />
+                question = <Picker data={this.props.data} handleAnswer={this.props.handleAnswer} currentAnswer={this.props.currentAnswer} />
             }
         }
         return (
@@ -78,12 +36,6 @@ class Question extends React.Component {
                 <span>
                     {question}
                 </span>
-                <button 
-                    className = {type === "picker" ? "hidden" : "visible"}
-                    onClick = {() => {this.props.nextQuestion()}}
-                >
-                    {buttonLabel}
-                </button>
             </span>
         );
     }
@@ -95,43 +47,61 @@ class Questions extends React.Component {
         this.state = {
             currentQuestion: 0,
             questions: [],
+            answers: {},
         }
     }
 
     componentDidMount = () => {
-        // fetchFile = (filePath) => {
-            fetch("../questions.json", {
-                method: "GET",
-                dataType: "JSON",
-                headers: {
-                    "Content-Type": "application/json; charset=utf-8",
-                }
-            })
-            .then((resp) => {
-                return resp.json()
-            }).then((data) => {
-                this.setState({questions: data.questions});
-            }); 
-        // }
+        fetch("../questions.json", {
+            method: "GET",
+            dataType: "JSON",
+            headers: {
+                "Content-Type": "application/json; charset=utf-8",
+            }
+        })
+        .then((resp) => {
+            return resp.json()
+        }).then((data) => {
+            this.setState({questions: data.questions});
+        }); 
+    }
+
+    handleAnswer = (questionId, answerData) => {
+        this.nextQuestion();
+        this.setAnswer(questionId, answerData);
+    }
+
+    setAnswer = (questionId, answerData) => {
+        var updatedAnswers = Object.assign({}, this.state.answers, {[questionId]: answerData});
+        this.setState({answers : updatedAnswers});
     }
 
     nextQuestion = () => {
-        this.setState({currentQuestion : this.state.currentQuestion + 1})
+        this.setState({currentQuestion : this.state.currentQuestion + 1});
+    }
+
+    previousQuestion = () => {
+        this.setState({currentQuestion : this.state.currentQuestion - 1});
     }
 
     render() {
         return (
-            <span>
+            <span className="question-outer">
+                <Backarrow
+                    currentQuestion = {this.state.currentQuestion}
+                    onClick = {() => this.previousQuestion()}
+                />
                 <Question 
+                    answers = {this.state.answers}
                     data = {this.state.questions[this.state.currentQuestion]}
                     currentQuestionId = {this.state.currentQuestion}
-                    nextQuestion = {this.nextQuestion}
+                    handleAnswer = {this.handleAnswer}
+                    currentAnswer = {this.state.answers[this.state.currentQuestion]}
                 />
             </span>
         );
     }
 }
-
 
 ReactDOM.render(
     <Questions />, 

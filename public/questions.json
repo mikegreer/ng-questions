@@ -3,40 +3,37 @@
         {
             "id": 0,
             "type": "multifield",
-            "headline": "Let's do this together",
+            "headline": "Let’s do this together",
             "subhead": "Tell us about you.",
             "fields": [
                 {
+                    "datalabel": "firstname",
                     "label": "First Name",
                     "type": "text"
                 },
                 {
+                    "datalabel": "lastname",
                     "label": "Last Name",
                     "type": "text"
                 }
-            ]
+            ],
+            "buttonLabel" : "Go"
         },
         {
             "id": 1,
             "type": "picker",
-            "headline": "It's good to meet you.",
+            "headline": "It’s good to meet you.",
             "subhead": "Do you own or rent?",
             "options": [
                 {
                     "label": "Own",
-                    "image": "key1.svg"
+                    "image": "own.svg"
                 },
                 {
                     "label": "Rent",
-                    "image": "key2.svg"
+                    "image": "rent.svg"
                 }
             ]
-        },
-        {
-            "id": 2,
-            "type": "address",
-            "headline": "What's your address?",
-            "label": "Start typing your address"
         },
         {
             "id": 3,
@@ -46,7 +43,7 @@
                 {
                     "label": "House",
                     "sublabel": "Commonly a single family home, duplex, triplex, townhouse",
-                    "image": "house.svg"
+                    "image": "home.svg"
                 },
                 {
                     "label": "Condo",
@@ -55,6 +52,13 @@
                 }
             ]
         },
+        {
+            "id": 2,
+            "type": "address",
+            "headline": "What’s your address?",
+            "label": "Start typing your address"
+        },
+       
         {
             "id": 4,
             "type": "picker",

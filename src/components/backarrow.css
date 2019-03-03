@@ -1,0 +1,16 @@
+.question-back{
+    width: 25px;
+    height: 40px;
+    background-image: url('/images/icons/back-arrow.svg');
+    background-size: cover;
+    cursor: pointer;
+    transition: all 0.3s;
+    opacity: 0.8;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+
+.question-back:hover{
+    opacity: 1;
+}
