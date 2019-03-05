@@ -13,6 +13,7 @@ class Backarrow extends React.Component {
                 className={arrowClasses}
                 onClick = {() => this.props.onClick()}
             >
+                <img src='./images/icons/back-arrow.svg' alt="back" width="25" height="40" />
             </div>
         );
     }

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="140px" height="141px" viewBox="0 0 140 141" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Electricity</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M19.6963741,27.5174724 L29.9448401,27.5174724 C30.1312362,27.5174724 30.2823401,27.6685763 30.2823401,27.8549724 C30.2823401,27.9066401 30.2704774,27.957618 30.2476663,28.0039775 L11.9439521,65.2029876 C11.8616588,65.3702339 11.659367,65.4391019 11.4921207,65.3568086 C11.3767222,65.3000269 11.3036259,65.1825942 11.3036259,65.0539824 L11.3036259,38.4825276 L1.05515991,38.4825276 C0.868763807,38.4825276 0.71765991,38.3314237 0.71765991,38.1450276 C0.71765991,38.0933599 0.729522576,38.042382 0.752333701,37.9960225 L19.0560479,0.797012437 C19.1383412,0.62976614 19.340633,0.56089811 19.5078793,0.643191386 C19.6232778,0.699973069 19.6963741,0.817405821 19.6963741,0.946017595 L19.6963741,27.5174724 Z" id="path-1"></path>
+    </defs>
+    <g id="Quote-Flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="QF.-08.-Home-Heating" transform="translate(-524.000000, -254.000000)">
+            <g id="Electricity" transform="translate(524.000000, 254.000000)">
+                <g id="Rectangle-+-Rectangle-Copy-35-+-Rectangle-Copy-37-Mask" transform="translate(0.000000, 0.109589)" fill="#F3F3F3" stroke="#FFFFFF" stroke-width="8">
+                    <circle id="Mask" cx="70" cy="70" r="66"></circle>
+                </g>
+                <g id="Rectangle" transform="translate(55.000000, 38.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFC74E" transform="translate(15.500000, 33.000000) rotate(-360.000000) translate(-15.500000, -33.000000) " xlink:href="#path-1"></use>
+                    <polygon fill="#FFFFFF" opacity="0.6" style="mix-blend-mode: soft-light;" mask="url(#mask-2)" transform="translate(17.196772, 44.169604) rotate(37.000000) translate(-17.196772, -44.169604) " points="8.9104389 23.3791125 25.4106362 23.3696601 25.483105 64.9600945 8.98290768 64.969547"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

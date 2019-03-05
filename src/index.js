@@ -3,8 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import MultiField from './components/MultiField.js'
+import AddressInput from './components/AddressInput.js'
 import Picker from './components/Picker.js'
+import MultiPicker from './components/MultiPicker.js'
 import Backarrow from './components/Backarrow';
+
 
 class Question extends React.Component {
     render() {
@@ -27,6 +30,14 @@ class Question extends React.Component {
                 />
             }else if(type === "picker"){
                 question = <Picker data={this.props.data} handleAnswer={this.props.handleAnswer} currentAnswer={this.props.currentAnswer} />
+            }else if(type === "multipicker"){
+                question = <MultiPicker data={this.props.data} handleAnswer={this.props.handleAnswer} currentAnswer={this.props.currentAnswer} />
+            }else if(type === "address"){
+                question = <AddressInput 
+                    data = {this.props.data} 
+                    handleAnswer = {this.props.handleAnswer} 
+                    fieldStates = {this.props.answers[this.props.data.id]}
+                />
             }
         }
         return (

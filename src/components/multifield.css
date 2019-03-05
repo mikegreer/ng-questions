@@ -15,20 +15,22 @@
     position: relative;
 }
 .label-text-input label {
-    font-size: 14px;
+    font-size: 12px;
     position: absolute;
-    top: 15px;
+    top: 20px;
     left: 14px;
     transition: all 0.3s;
     pointer-events: none;
+    opacity: 0.5;
 }
 
 .label-text-input input{
-    font-size: 20px;
+    font-size: 16px;
 }
 .label-text-input label.fill-input {
-    font-size: 20px;
+    font-size: 16px;
     top: 35px;
+    opacity: 1;
 }
 
 label{
@@ -36,7 +38,8 @@ label{
   }
   input{
     margin: 10px 0;
-    padding: 25px 15px 20px;
+    padding: 30px 15px 15px;
     border: none;
-    border-radius: 6px;
+    border-radius: 2px;
+    box-shadow: 0px 3px 0 rgba(0, 0, 0, 0.2);
   }

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="140px" height="141px" viewBox="0 0 140 141" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Trampoline</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Quote-Flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="QF.-10.-QF.-Risk-factors" transform="translate(-703.000000, -291.000000)">
+            <g id="Trampoline" transform="translate(703.000000, 291.000000)">
+                <g id="Rectangle-+-Rectangle-Copy-35-+-Rectangle-Copy-37-Mask" transform="translate(0.000000, 0.109589)" fill="#F3F3F3" stroke="#FFFFFF" stroke-width="8">
+                    <circle id="Mask" cx="70" cy="70" r="66"></circle>
+                </g>
+                <g id="Group-3" transform="translate(20.000000, 47.000000)">
+                    <g id="Rectangle-+-Rectangle-Copy-48-+-Rectangle-Copy-49-Mask" transform="translate(0.000000, 20.481928)">
+                        <g id="Mask" fill="#AD97E8">
+                            <rect id="Rectangle" x="0" y="0" width="7.69230769" height="32.8934787" rx="3.2"></rect>
+                            <rect id="Rectangle-Copy-32" x="92.3076923" y="0" width="7.69230769" height="32.8934787" rx="3.2"></rect>
+                            <rect id="Rectangle-Copy-33" x="46.1538462" y="20.6540448" width="9.23076923" height="27.5387263" rx="3.84"></rect>
+                        </g>
+                        <polygon id="Rectangle" fill="#9B9B9B" opacity="0.4" style="mix-blend-mode: multiply;" transform="translate(4.174429, 7.857322) rotate(6.000000) translate(-4.174429, -7.857322) " points="-3.12927247 1.74144545 11.4852265 1.73301911 11.4781306 13.9731988 -3.13636833 13.9816252"></polygon>
+                        <polygon id="Rectangle-Copy-48" fill="#9B9B9B" opacity="0.4" style="mix-blend-mode: multiply;" transform="translate(95.190430, 7.355874) rotate(6.000000) translate(-95.190430, -7.355874) " points="87.8867281 1.23999769 102.501227 1.23157136 102.494131 13.4717511 87.8796323 13.4801774"></polygon>
+                        <polygon id="Rectangle-Copy-49" fill="#9B9B9B" opacity="0.4" style="mix-blend-mode: multiply;" transform="translate(50.916091, 24.043159) rotate(6.000000) translate(-50.916091, -24.043159) " points="45.5344626 19.4561963 56.3030408 19.4499874 56.2977189 28.6301222 45.5291407 28.6363311"></polygon>
+                    </g>
+                    <g id="Group-17">
+                        <ellipse id="Oval" fill="#AD97E8" cx="50" cy="22.8915663" rx="50" ry="22.8915663"></ellipse>
+                        <ellipse id="Oval-Copy-17" fill="#FFFFFF" opacity="0.6" style="mix-blend-mode: soft-light;" cx="50.3846154" cy="22.5100402" rx="41.1538462" ry="16.4056225"></ellipse>
+                        <ellipse id="Oval-Copy-17" stroke="#FFFFFF" stroke-width="1.92" cx="50.3846154" cy="22.5100402" rx="41.1538462" ry="16.4056225"></ellipse>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

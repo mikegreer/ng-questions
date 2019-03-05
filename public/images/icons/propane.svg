@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="140px" height="141px" viewBox="0 0 140 141" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Natural gas</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M21.5,58 C33.3741221,58 43,48.2621933 43,36.25 C43,28.2418711 35.8333333,16.1585378 21.5,0 C7.16666667,16.1585378 0,28.2418711 0,36.25 C0,48.2621933 9.62587788,58 21.5,58 Z" id="path-1"></path>
+        <path d="M21.5,58 C32.815482,58 34,52.4595238 34,45.625 C34,41.0686508 29.8333333,34.1936508 21.5,25 C13.1666667,34.1936508 9,41.0686508 9,45.625 C9,52.4595238 10.184518,58 21.5,58 Z" id="path-3"></path>
+        <path d="M21.5,58 C25.5735735,58 26,55.1458153 26,51.625 C26,49.2777898 24.5,45.7361231 21.5,41 C18.5,45.7361231 17,49.2777898 17,51.625 C17,55.1458153 17.4264265,58 21.5,58 Z" id="path-5"></path>
+    </defs>
+    <g id="Quote-Flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="QF.-08.-Home-Heating" transform="translate(-704.000000, -254.000000)">
+            <g id="Natural-gas" transform="translate(704.000000, 254.000000)">
+                <g id="Rectangle-+-Rectangle-Copy-35-+-Rectangle-Copy-37-Mask" transform="translate(0.000000, 0.109589)" fill="#F3F3F3" stroke="#FFFFFF" stroke-width="8">
+                    <circle id="Mask" cx="70" cy="70" r="66"></circle>
+                </g>
+                <g transform="translate(47.000000, 40.000000)">
+                    <path d="M3.25357774,48.025622 C1.19135498,44.6722883 0,40.7123849 0,36.4705882 C0,28.4137284 7.2,16.2568656 21.6,0 C31.2501635,10.8945424 37.6667973,19.9477681 40.8499014,27.1596769 C43.6166338,32.266751 45,36.5860744 45,40.1176471 C45,52.2029369 35.3293506,62 23.4,62 C14.2232361,62 6.38308095,56.2024912 3.25357774,48.025622 Z" id="Combined-Shape" fill="#9B9B9B" opacity="0.6" style="mix-blend-mode: multiply;"></path>
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFAA4E" xlink:href="#path-1"></use>
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <use id="Mask" fill-opacity="0.5" fill="#FFFFFF" xlink:href="#path-3"></use>
+                    <mask id="mask-6" fill="white">
+                        <use xlink:href="#path-5"></use>
+                    </mask>
+                    <use id="Mask" fill-opacity="0.5" fill="#FFFFFF" transform="translate(21.500000, 49.500000) scale(-1, 1) translate(-21.500000, -49.500000) " xlink:href="#path-5"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
