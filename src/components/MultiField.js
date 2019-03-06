@@ -10,17 +10,17 @@ class MultiField extends React.Component {
     }
 
     componentDidMount() {
+        console.log(this.props.currentAnswer);
         let fieldStates = {};
         this.props.data.fields.forEach((field, id) => {
             fieldStates[field.datalabel] = '';
         });
-        fieldStates = Object.assign(fieldStates, this.props.fieldStates);
+        fieldStates = Object.assign(fieldStates, this.props.currentAnswer);
         this.setState({ fieldStates: fieldStates });
     }
 
     submitAnswer = () => {
-        console.log('submit');
-        this.props.handleAnswer(this.props.data.id, this.state.fieldStates);
+        this.props.handleAnswer(this.state.fieldStates);
     }
 
     handleChange = (event) => {

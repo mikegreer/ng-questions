@@ -1,7 +1,7 @@
 {
-    "questions" : [
-        {
-            "id": 8,
+    "questions" : {
+        "homefactors": {
+            "displayOrder": 9,
             "type": "multipicker",
             "headline": "Do you have any of these?",
             "subhead": "Select all that apply.",
@@ -28,8 +28,8 @@
                 }
             ]
         },
-        {
-            "id": 0,
+        "name": {
+            "displayOrder": 1,
             "type": "multifield",
             "headline": "Let’s do this together",
             "subhead": "Tell us about you.",
@@ -47,8 +47,9 @@
             ],
             "buttonLabel" : "Go"
         },
-        {
-            "id": 1,
+        "policyType": {
+            "displayOrder": 2,
+            "datalabel": "policyType",
             "type": "picker",
             "headline": "It’s good to meet you.",
             "subhead": "Do you own or rent?",
@@ -65,9 +66,8 @@
                 }
             ]
         },
-       
-        {
-            "id": 2,
+        "address": {
+            "displayOrder": 3,
             "type": "address",
             "headline": "What’s your address?",
             "label": "Start typing your address",
@@ -94,8 +94,8 @@
                 }
             ]
         },
-        {
-            "id": 3,
+        "propertyCategory": {
+            "displayOrder": 4,
             "type": "picker",
             "headline": "What type of home is it?",
             "subhead": "",
@@ -112,9 +112,10 @@
                 }
             ]
         },
-        {
-            "id": 4,
+        "fixtureCoverLevel": {
+            "displayOrder": 5,
             "type": "picker",
+            "datalabel": "fixtureCoverLevel",
             "headline": "Got it. Thanks.",
             "subhead": "How would you describe your home’s fixtures and finish? This helps us understand the rebuild cost if the worst was to happen.",
             "options": [
@@ -132,8 +133,9 @@
                 }
             ]
         },
-        {
-            "id": 5,
+        "occupancy": {
+            "displayOrder": 6,
+            "datalabel": "occupancy",
             "type": "picker",
             "headline": "Thanks for that.",
             "subhead": "What do you use your home for?",
@@ -155,8 +157,9 @@
                     "value": "renting out"
                 }
             ],
-            "secondaryQuestions": [
-                {
+            "secondaryQuestions": {
+                "rentDuration": {
+                    "datalabel": "rentDuration",
                     "conditions": "renting out",
                     "headline": "Will you rend your home for more than two weeks a year?",
                     "type": "picker",
@@ -171,11 +174,12 @@
                         }
                     ]
                 }
-            ]
+            }
         },
-        {
-            "id": 6,
+        "heating": {
+            "displayOrder": 7,
             "type": "picker",
+            "datalabel": "heating",
             "headline": "How do you heat your home?",
             "options": [
                 {
@@ -200,8 +204,9 @@
                 }
             ]
         },
-        {
-            "id": 7,
+        "yard": {
+            "displayOrder": 8,
+            "datalabel": "yard",
             "type": "picker",
             "headline": "Tell us about your yard and other structures.",
             "subhead": "What’s your set up?",
@@ -232,5 +237,5 @@
                 }
             ]
         }
-    ]
+    }
 }

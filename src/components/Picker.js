@@ -18,9 +18,6 @@ class PickerOption extends React.Component {
     }
 }
 class Picker extends React.Component {
-    handleAnswer = (pickerOptionId) => {
-        this.props.handleAnswer(this.props.data.id, pickerOptionId);
-    }
     render() {
         const options = [];
         this.props.data.options.forEach((option, id) => {
@@ -29,7 +26,7 @@ class Picker extends React.Component {
                     optionData = {option}
                     key = {id}
                     id = {id}
-                    handleAnswer = {this.handleAnswer}
+                    handleAnswer = {() => this.props.handleAnswer(id)}
                     selected = {this.props.currentAnswer === id}
                 />
             )

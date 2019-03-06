@@ -6,7 +6,7 @@ class Backarrow extends React.Component {
     render() {
         var arrowClasses = classNames({
             'question-back': true,
-            'hidden': this.props.currentQuestion < 1,
+            'hidden': this.props.hidden,
         });
          return(
             <div 
