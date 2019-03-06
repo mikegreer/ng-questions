@@ -39,6 +39,7 @@ class MultiField extends React.Component {
                 <span className="label-text-input">
                     <label className={largeLabel ? 'fill-input' : null}>{field.label}</label>
                     <input 
+                        className = "text-input"
                         name = {field.datalabel}
                         type = "text"
                         onChange = {this.handleChange}

@@ -125,8 +125,13 @@ class Questions extends React.Component {
     }
 
     nextQuestion = () => {
+        //check for supplementary questions
+        //if current question has supplementary qs
+            //if answers given trigger supplementary qs
+                //load supplementary question
+                //NEEDED: a state property to reflect a supplementary q is in progress
+                //2.1?
         this.setState({questionCount : this.state.questionCount + 1});
-        
     }
 
     previousQuestion = () => {

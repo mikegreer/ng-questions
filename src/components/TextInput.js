@@ -18,7 +18,6 @@ class TextInput extends React.Component {
              <span>
                 <label>{this.props.label}</label>
                 <input
-                
                     type="text"
                     label={this.props.label}
                     onChange={this.handleInputChange}

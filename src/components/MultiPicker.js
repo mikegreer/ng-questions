@@ -53,7 +53,8 @@ class MultiPicker extends React.Component {
 
     render() {
         //TODO: make button label say 'none apply' until something has been selected, then 'continue'
-        const buttonLabel = this.props.data.buttonLabel ? this.props.data.buttonLabel : 'nope';
+        // const buttonLabel = this.props.data.buttonLabel ? this.props.data.buttonLabel : 'nope';
+        const buttonLabel = "continue";
         const options = [];    
         this.props.data.options.forEach((option, id) => {
             const optionKey = option.value;
@@ -66,15 +67,24 @@ class MultiPicker extends React.Component {
                 />
             )
         });
+        const multiStyle = {
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center"
+        }
         return (
-            <span className="picker">
-                {options}
-                <input
-                    className = "form-button"
-                    type = "submit"
-                    value = {buttonLabel} 
-                    onClick = {() => this.submitAnswer()}
-                />    
+            <span className="multipicker" style={multiStyle}>
+                <span className="picker">
+                    {options}  
+                </span>
+                <span>
+                    <input
+                        className = "form-button"
+                        type = "submit"
+                        value = {buttonLabel} 
+                        onClick = {() => this.submitAnswer()}
+                    />  
+                </span>
             </span>
         );
     }
