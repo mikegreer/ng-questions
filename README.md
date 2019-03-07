@@ -47,17 +47,20 @@ Displays a card for each option provided. Users can select / deselect multiple c
 
 ### Multipicker usage
 
-```<MultiPicker 
+```javascript
+<MultiPicker 
     data = {this.props.data} //data object for single question to render
     handleAnswer = {(answerData) => this.handleAnswer(answerData)} //pass the function to call when the button is clicked
     currentAnswer = {this.props.answer} //pass current answer object (used to set state of the component when rendered)
-/>```
+/>
+```
 
 Images referenced in the options object are stored in '/public/images/icons/' 
 
 Multipicker questions look like this:
 
-```"questionKey": {
+```JSON
+"questionKey": {
     "displayOrder": 1,
     "type": "multipicker",
     "headline": "Headline text",
@@ -84,7 +87,8 @@ Multipicker questions look like this:
             "value": "dog"
         }
     ]
-}```
+}
+```
 
 ## Multiple text input fields
 
@@ -96,15 +100,18 @@ Displays a text input for each field provided, and a button to save answers and 
 
 The multiple text input component is used like this:
 
-```<MultiField 
+```javascript
+<MultiField 
     data = {this.props.data} //data object for single question to render
     handleAnswer={(answerData) => this.handleAnswer(answerData)} //pass the function to call when the button is clicked
     currentAnswer = {this.props.answer} //pass current answer object (used to set state of the component when rendered)
-/>```
+/>
+```
 
 ### MultiField Data object
 
-```"name": {
+```JSON
+"name": {
     "displayOrder": 2,
     "type": "multifield",
     "headline": "Headline text",
@@ -122,7 +129,8 @@ The multiple text input component is used like this:
         }
     ],
     "buttonLabel" : "Go"
-}```
+}
+```
 
 ## Picker
 
@@ -132,15 +140,18 @@ Displays a card for each option provided. Clicking on a card stores its dataLabe
 
 ### Picker usage
 
-```<Picker
+```javascript
+<Picker
     data={this.props.data} //data object for single question to render
     handleAnswer={(answerData) => this.handleAnswer(answerData)} //pass the function to call when a card is clicked
     currentAnswer={this.props.answer} //pass current answer object (used to set state of the component when rendered)
-/>```
+/>
+```
 
 ### Picker Data object
 
-```"policyType": {
+```JSON
+"policyType": {
     "displayOrder": 3,
     "datalabel": "policyType",
     "type": "picker",
@@ -158,7 +169,8 @@ Displays a card for each option provided. Clicking on a card stores its dataLabe
             "datalabel": "renter"
         }
     ]
-}```
+}
+```
 
 ## TODO
 
