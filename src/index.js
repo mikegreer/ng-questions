@@ -8,6 +8,28 @@ import Picker from './components/Picker.js'
 import MultiPicker from './components/MultiPicker.js'
 import Backarrow from './components/Backarrow';
 
+class Answers extends React.Component {
+    render () {
+        const answers = [];
+        this.props.questionIndex.forEach((key) => {
+            answers.push(this.props.answerData[key]);
+        });
+        const stringAnswers = [];
+        answers.forEach((answer) => {
+            stringAnswers.push(<div>{JSON.stringify(answer)}</div>);
+        });
+
+        var divStyle = {
+             width: '70vw',
+        };
+        return (
+            <div style={divStyle}>
+                <h2>Answers</h2>
+                {stringAnswers}
+            </div>
+        );
+    }
+}
 
 class Question extends React.Component {
     handleAnswer = (answerData) => {
@@ -71,11 +93,12 @@ class Questions extends React.Component {
             answers: {},
             questionCount: 0,
             firstName: "",
+            showResults: false,
         }
     }
 
     componentDidMount = () => {
-        fetch("../questions.json", {
+        fetch("../questionData/questions.json", {
             method: "GET",
             dataType: "JSON",
             headers: {
@@ -86,8 +109,8 @@ class Questions extends React.Component {
             return resp.json()
         }).then((data) => {
             this.setState({
-                questionIndex: this.orderQuestionsByDisplayOrder(data.questions),
-                questions: data.questions
+                questionIndex: this.orderQuestionsByDisplayOrder(data),
+                questions: data
             });
         }); 
     }
@@ -123,8 +146,16 @@ class Questions extends React.Component {
             this.setState({firstName: answer.firstname});
         }
     }
-
+    
     nextQuestion = () => {
+        if(this.state.questionCount >= this.state.questionIndex.length - 1){
+            console.log("Questions done");
+            this.setState({
+                showResults: true
+            });
+        }else{
+            this.setState({showResults: false});
+        }
         //check for supplementary questions
         //if current question has supplementary qs
             //if answers given trigger supplementary qs
@@ -135,6 +166,7 @@ class Questions extends React.Component {
     }
 
     previousQuestion = () => {
+        this.setState({showResults: false});
         this.setState({questionCount : this.state.questionCount - 1});
     }
 
@@ -154,6 +186,7 @@ class Questions extends React.Component {
                     handleAnswer = {this.handleAnswer}
                     firstName = {this.state.firstName}
                 />
+                { this.state.showResults ? <Answers questionIndex={this.state.questionIndex} answerData={this.state.answers} /> : null }
             </span>
         );
     }

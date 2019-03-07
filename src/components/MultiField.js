@@ -44,7 +44,7 @@ class MultiField extends React.Component {
                         type = "text"
                         onChange = {this.handleChange}
                         label = {field.label}
-                        value = {this.state.fieldStates[field.datalabel]}
+                        value = {this.state.fieldStates[field.datalabel] || ''}
                     />
                 </span>
             );

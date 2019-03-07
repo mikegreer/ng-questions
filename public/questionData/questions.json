@@ -1,0 +1,239 @@
+{
+    "homefactors": {
+        "displayOrder": 9,
+        "type": "multipicker",
+        "headline": "Do you have any of these?",
+        "subhead": "Select all that apply.",
+        "options": [
+            {
+                "label": "Pool",
+                "image": "pool.svg",
+                "value": "pool"
+            },
+            {
+                "label": "Above ground pool",
+                "image": "above-ground-pool.svg",
+                "value": "aboveGroundPool"
+            },
+            {
+                "label": "Trampoline",
+                "image": "trampoline.svg",
+                "value": "trampoline"
+            },
+            {
+                "label": "Dog",
+                "image": "dog.svg",
+                "value": "dog"
+            }
+        ]
+    },
+    "name": {
+        "displayOrder": 1,
+        "type": "multifield",
+        "headline": "Let’s do this together",
+        "subhead": "Tell us about you.",
+        "fields": [
+            {
+                "datalabel": "firstname",
+                "label": "First Name",
+                "type": "text"
+            },
+            {
+                "datalabel": "lastname",
+                "label": "Last Name",
+                "type": "text"
+            }
+        ],
+        "buttonLabel" : "Go"
+    },
+    "policyType": {
+        "displayOrder": 2,
+        "datalabel": "policyType",
+        "type": "picker",
+        "headline": "It’s good to meet you.",
+        "subhead": "Do you own or rent?",
+        "options": [
+            {
+                "label": "Own",
+                "image": "own.svg",
+                "datalabel": "owner"
+            },
+            {
+                "label": "Rent",
+                "image": "rent.svg",
+                "datalabel": "renter"
+            }
+        ]
+    },
+    "address": {
+        "displayOrder": 3,
+        "type": "address",
+        "headline": "What’s your address?",
+        "label": "Start typing your address",
+        "fields": [
+            {
+                "datalabel": "street",
+                "label": "Street",
+                "type": "text"
+            },
+            {
+                "datalabel": "city",
+                "label": "City",
+                "type": "text"
+            },
+            {
+                "datalabel": "state",
+                "label": "State",
+                "type": "text"
+            },
+            {
+                "datalabel": "zip",
+                "label": "Zip",
+                "type": "text"
+            }
+        ]
+    },
+    "propertyCategory": {
+        "displayOrder": 4,
+        "type": "picker",
+        "headline": "What type of home is it?",
+        "subhead": "",
+        "options": [
+            {
+                "label": "House",
+                "sublabel": "Commonly a single family home, duplex, triplex, townhouse",
+                "image": "home.svg"
+            },
+            {
+                "label": "Condo",
+                "sublabel": "Often a multi-family building or complex",
+                "image": "condo.svg"
+            }
+        ]
+    },
+    "fixtureCoverLevel": {
+        "displayOrder": 5,
+        "type": "picker",
+        "datalabel": "fixtureCoverLevel",
+        "headline": "Got it. Thanks.",
+        "subhead": "How would you describe your home’s fixtures and finish? This helps us understand the rebuild cost if the worst was to happen.",
+        "options": [
+            {
+                "label": "No frills",
+                "image": "no-frills.svg"
+            },
+            {
+                "label": "Some luxuries",
+                "image": "some-luxuries.svg"
+            },
+            {
+                "label": "Best of everything",
+                "image": "best-of-everything.svg"
+            }
+        ]
+    },
+    "occupancy": {
+        "displayOrder": 6,
+        "datalabel": "occupancy",
+        "type": "picker",
+        "headline": "Thanks for that.",
+        "subhead": "What do you use your home for?",
+        "options": [
+            {
+                "label": "Moving to it",
+                "sublabel": "(or been in fewer than 12 months)",
+                "image": "moving-in.svg",
+                "value": "moving"
+            },
+            {
+                "label": "Live in it",
+                "image": "live-in-it.svg",
+                "value": "live in"
+            },
+            {
+                "label": "Rent it out",
+                "image": "rent-it-out.svg",
+                "value": "renting out"
+            }
+        ],
+        "secondaryQuestions": {
+            "rentDuration": {
+                "datalabel": "rentDuration",
+                "conditions": "renting out",
+                "headline": "Will you rend your home for more than two weeks a year?",
+                "type": "picker",
+                "options": [
+                    {
+                        "label": "yes",
+                        "image": "tick.svg"
+                    },
+                    {
+                        "label": "no",
+                        "image": "cross.svg"
+                    }
+                ]
+            }
+        }
+    },
+    "heating": {
+        "displayOrder": 7,
+        "type": "picker",
+        "datalabel": "heating",
+        "headline": "How do you heat your home?",
+        "options": [
+            {
+                "label": "Natural Gas",
+                "image": "natural-gas.svg",
+                "value": "gas"
+            },
+            {
+                "label": "Electricity",
+                "image": "electricity.svg",
+                "value": "electric"
+            },
+            {
+                "label": "Liquid propane gas",
+                "image": "propane.svg",
+                "value": "propane"
+            },
+            {
+                "label": "Other",
+                "image": "heating-other.svg",
+                "value": "other"
+            }
+        ]
+    },
+    "yard": {
+        "displayOrder": 8,
+        "datalabel": "yard",
+        "type": "picker",
+        "headline": "Tell us about your yard and other structures.",
+        "subhead": "What’s your set up?",
+        "options": [
+            {
+                "label": "Basic",
+                "sublabel": "A yard, maybe some fences",
+                "image": "yard-basic.svg",
+                "value": "basic"
+            },
+            {
+                "label": "Classic",
+                "sublabel": "Yard, fences plus one other structure",
+                "image": "yard-classic.svg",
+                "value": "classic"
+            },
+            {
+                "label": "Classic+",
+                "sublabel": "Yard, fences, and two other structures",
+                "image": "yard-classic-plus.svg",
+                "value": "classicplus"
+            },
+            {
+                "label": "Extensive",
+                "sublabel": "Yard, fences and more than two other structures",
+                "image": "yard-extensive.svg",
+                "value": "extensive"
+            }
+        ]
+    }
+}
