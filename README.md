@@ -27,23 +27,25 @@ The build is minified and the filenames include the hashes.
 
 ## Data structure
 
-**Questions**
+### Questions
 
 The app has been built to allow questions to be changed quickly. It currently loads in a JSON question file '/public/questionData/questions.json' - an object with keys for each question (see components below for each data structure).
 
 Questions are ordered by their 'displayOrder' property.
 
-**Answers**
+### Answers
 
 Answers are stored in the state of the top level Questions component. There is a single answers object with keys matching the question keys.
 
-### Multipicker
+# Components
+
+## Multipicker
 
 `/components/MultiPicker.js`
 
 Displays a card for each option provided. Users can select / deselect multiple cards before clicking the button to save their answers and advance to the next question.
 
-**Multipicker usage**
+### Multipicker usage
 
 `<MultiPicker 
     data = {this.props.data} //data object for single question to render
@@ -84,13 +86,13 @@ Multipicker questions look like this:
     ]
 }`
 
-### Multiple text input fields
+## Multiple text input fields
 
 `/components/MultiField.js`
 
 Displays a text input for each field provided, and a button to save answers and advance users to the next question.
 
-**MultiField usage**
+### MultiField usage
 
 The multiple text input component is used like this:
 
@@ -100,7 +102,7 @@ The multiple text input component is used like this:
     currentAnswer = {this.props.answer} //pass current answer object (used to set state of the component when rendered)
 />`
 
-**MultiField Data object**
+### MultiField Data object
 
 `"name": {
     "displayOrder": 2,
@@ -122,13 +124,13 @@ The multiple text input component is used like this:
     "buttonLabel" : "Go"
 }`
 
-###Picker
+## Picker
 
 `/somponents/Picker.js`
 
 Displays a card for each option provided. Clicking on a card stores its dataLabel into the answer object and advances the user to the next question. 
 
-**Picker usage**
+### Picker usage
 
 `<Picker
     data={this.props.data} //data object for single question to render
@@ -136,7 +138,7 @@ Displays a card for each option provided. Clicking on a card stores its dataLabe
     currentAnswer={this.props.answer} //pass current answer object (used to set state of the component when rendered)
 />`
 
-**Picker Data object**
+### Picker Data object
 
 `"policyType": {
     "displayOrder": 3,
